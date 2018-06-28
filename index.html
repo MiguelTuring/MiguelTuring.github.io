@@ -5,18 +5,22 @@
     <h2>Weather Information</h2>
     <p> First name, Last Name, and Zip code will be collected. </p>
 
+    <script src = "weatherform.js"></script>
+
     <fieldset>
         <legend>Personal Information </legend>
-        <form action="" target="_self">
-            First name:
+        <form name="weatherForm" action="" target="_self" onsubmit="validateForm()" method ="post">
+            First name:<br>
+            <input type="text" name="firstname" maxlength="36" required>
             <br>
-            <input type="text" name="firstname" maxlength="36">
-            <br> Last name:
+             Last name: <br>
+            <input type="text" name="lastname" maxlength="36" required>
+            <br> 
+             Telephone Number:<br>
+            <input type="text" name="telephoneNumber" maxlength="9" required>
             <br>
-            <input type="text" name="lastname" maxlength="36">
-            <br> Zip code:
-            <br>
-            <input type="text" name="zipcode" maxlength="5">
+            Zip code: <br>
+            <input type="text" name="zipcode" maxlength="5" required>
             <br>
             <br>
             <input type="submit" value="Get Weather">
