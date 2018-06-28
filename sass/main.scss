@@ -1,0 +1,21 @@
+$profile-color:green;
+$blog-color:#5c55c5;
+
+
+.profile {
+    width: 50%;
+    height: 400px;
+    float: left;
+    background: $profile-color;
+
+}
+.blog {
+    width: 50%;
+    height: 400px;
+    float: right;
+    background: $blog-color;
+
+    .blog-entry {
+        font-size: 10px;
+    }
+}
